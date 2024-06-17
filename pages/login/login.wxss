@@ -1,0 +1,78 @@
+/* login.wxss */
+
+page {
+  background-color: #343a40; /* 设置背景色 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100vh; /* 全屏高度 */
+  margin: 0;
+  padding: 20px; /* 确保小屏幕设备上有间距 */
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:active {
+  background-color: #0056b3;
+}
+
+.footer {
+  width: 100%;
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.footer navigator {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer navigator:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+<view class="content">
+  <image src="/assets/logo.png" mode="widthFix"></image>
+  <view class="container">
+    <text class="mt-4 greeting">每一步都算数！</text>
+    <form class="form" bindsubmit="onLogin">
+      <input name="username" placeholder="Username" required />
+      <input name="password" type="password" placeholder="Password" required />
+      <button form-type="submit" class="btn">Login</button>
+    </form>
+  </view>
+</view>
+<view class="footer">
+  <text>© EveryStepCounts | NUS NightRunners</text>
+</view>
+
+

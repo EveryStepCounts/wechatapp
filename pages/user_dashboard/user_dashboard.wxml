@@ -1,0 +1,30 @@
+<view class="content">
+  <image src="/assets/logo.png" mode="widthFix"></image>
+  
+  <view class="container">
+    <text class="mt-4 greeting">Hi, {{username}}</text>
+    <view class="user-info">
+      <view class="info-item"><text>User ID:</text><text>{{userId}}</text></view>
+      <view class="info-item"><text>Check-in Count:</text><text>{{checkinCount}}</text></view>
+      <view class="info-item"><text>Total Distance:</text><text>{{totalDistance}} km</text></view>
+    </view>
+    <text class="mt-4">More Info is on Nightrunner.org!</text>
+
+    <view class="distance-section">
+      <text class="mt-4">Enter Today's Distance</text>
+      <picker mode="selector" range="{{distances}}" bindchange="onDistanceChange" value="{{selectedDistanceIndex}}">
+        <view class="picker">
+          <text>Selected: {{distances[selectedDistanceIndex]}}</text>
+        </view>
+      </picker>
+      <button bindtap="onSubmitDistance" class="btn">Submit Distance</button>
+    </view>
+    
+    <view class="qr-section">
+      <canvas canvas-id="canvas" style="width: 200px; height: 200px; margin-top: 20px;"></canvas>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  © EveryStepCounts Dev. Team
+</view>
